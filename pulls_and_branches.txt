@@ -1,0 +1,483 @@
+Last login: Thu Oct 25 19:12:16 on console
+Angellos-MacBook-Pro:~ angellop$ ls
+#.emacs#			NetBeansProjects
+Applications			New Unity Project
+Arena Tracker			PAAC
+Creative Cloud Files		Pictures
+Desktop				Public
+Developer			SLOHacks_2018
+Documents			Test
+Downloads			VM_Robotics
+GitHub				Web_Dev
+IntelliJ			hackathon
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				practice_code
+Angellos-MacBook-Pro:~ angellop$ cd Documents/
+Angellos-MacBook-Pro:Documents angellop$ ls
+COMS102
+CPE100
+CPE101
+CPE133
+CPE202
+CSC123
+CSC203
+CSC225
+Digital Editions
+DipTrace
+ENGL149
+GitHub
+HIST216
+Huffman
+IME156
+Individual Change of Major Agreement.pdf
+JavaPrograms
+League of Legends
+MPN_PARENT_2018-2019.pdf
+PHYS133
+PHYS_132_schedule.pdf
+PHYS_132_syllabus.pdf
+POLS_111
+Picture1.png
+PolySatQs.txt
+PolySat_Application.pdf
+Processing
+Textbooks
+Virtual Machines.localized
+WebEx
+career
+check_diags.py
+color_schemes
+earthquake_data
+infor.py
+intro-to-webdev-master
+scripting
+Angellos-MacBook-Pro:Documents angellop$ cd CSC203
+Angellos-MacBook-Pro:CSC203 angellop$ ls
+CSC203.iml		Lab04			lab01_Part 1-20180926
+IntelliJ_to_Netbeans	P1_INST			lab01_Part 2-20180926
+JUnit-Sample		Project1		lab01_part3.graphml
+JUnitSampleSol		Project1Inst		lab03
+Lab00			Project1_IntelliJ	lab03_cmd
+Lab00.java		TestIntelliJ		project1_cmd
+Lab01			_3			src
+Lab02			lab00.pdf		testing
+Lab02_Part2		lab00.py
+Angellos-MacBook-Pro:CSC203 angellop$ cd Project1_IntelliJ/
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ ls
+  4 This is the repository for my CSC203 project. This is a project that I will Project1_IntelliJ.iml	out	       		src
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ cd src
+Angellos-MacBook-Pro:src angellop$ ls
+Action.java		EventScheduler.java	WorldView.java
+ActionKind.java		Functions.java		core.jar
+Background.java		ImageStore.java		gaia.sav
+Entity.java		Point.java		imagelist
+EntityKind.java		Viewport.java		images
+Event.java		VirtualWorld.java
+EventComparator.java	WorldModel.java
+Angellos-MacBook-Pro:src angellop$ cd ..
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ ls
+Project1_IntelliJ.iml	out			src
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git init
+Initialized empty Git repository in /Users/angellop/Documents/CSC203/Project1_IntelliJ/.git/
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ ls
+Project1_IntelliJ.iml	out			src
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git add README.md
+fatal: pathspec 'README.md' did not match any files
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ vim README.md
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ ls
+Project1_IntelliJ.iml	out
+README.md		src
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git add README.md
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git commit -m "first commit"
+[master (root-commit) 2093cc2] first commit
+ 1 file changed, 5 insertions(+)
+ create mode 100644 README.md
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git remote add origin https://github.com/ANGELLOPARR/CSC203-Project.git
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 435 bytes | 435.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/ANGELLOPARR/CSC203-Project/pull/new/master
+remote:
+To https://github.com/ANGELLOPARR/CSC203-Project.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git add *
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git commit -m "add rest of files"
+[master 4cc848c] add rest of files
+ 124 files changed, 4254 insertions(+)
+ create mode 100644 .idea/vcs.xml
+ create mode 100644 Project1_IntelliJ.iml
+ create mode 100644 out/production/Project1_IntelliJ/Action$1.class
+ create mode 100644 out/production/Project1_IntelliJ/Action.class
+ create mode 100644 out/production/Project1_IntelliJ/ActionKind.class
+ create mode 100644 out/production/Project1_IntelliJ/Background.class
+ create mode 100644 out/production/Project1_IntelliJ/Entity$1.class
+ create mode 100644 out/production/Project1_IntelliJ/Entity.class
+ create mode 100644 out/production/Project1_IntelliJ/EntityKind.class
+ create mode 100644 out/production/Project1_IntelliJ/Event.class
+ create mode 100644 out/production/Project1_IntelliJ/EventComparator.class
+ create mode 100644 out/production/Project1_IntelliJ/EventScheduler.class
+ create mode 100644 out/production/Project1_IntelliJ/Functions.class
+ create mode 100644 out/production/Project1_IntelliJ/ImageStore.class
+ create mode 100644 out/production/Project1_IntelliJ/Point.class
+ create mode 100644 out/production/Project1_IntelliJ/Viewport.class
+ create mode 100644 out/production/Project1_IntelliJ/VirtualWorld.class
+ create mode 100644 out/production/Project1_IntelliJ/WorldModel.class
+ create mode 100644 out/production/Project1_IntelliJ/WorldView.class
+ create mode 100755 out/production/Project1_IntelliJ/core.jar
+ create mode 100644 out/production/Project1_IntelliJ/gaia.sav
+ create mode 100644 out/production/Project1_IntelliJ/imagelist
+ create mode 100644 out/production/Project1_IntelliJ/images/blacksmith.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob1.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob10.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob11.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob12.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob2.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob3.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob4.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob5.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob6.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob7.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob8.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/blob9.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/freeze1.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/freeze2.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/freeze3.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/freeze4.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/grass.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/miner1.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/miner2.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/miner3.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/miner4.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/miner5.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/none.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/obstacle.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/ore.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/quake1.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/quake2.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/quake3.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/quake4.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/quake5.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/quake6.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/rock.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/vein.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/wyvern1.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/wyvern2.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/wyvern3.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/wyvern4.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/wyvern5.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/wyvern6.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/wyvern7.bmp
+ create mode 100644 out/production/Project1_IntelliJ/images/wyvern8.bmp
+ create mode 100644 src/Action.java
+ create mode 100644 src/ActionKind.java
+ create mode 100644 src/Background.java
+ create mode 100644 src/Entity.java
+ create mode 100644 src/EntityKind.java
+ create mode 100644 src/Event.java
+ create mode 100644 src/EventComparator.java
+ create mode 100644 src/EventScheduler.java
+ create mode 100644 src/Functions.java
+ create mode 100644 src/ImageStore.java
+ create mode 100644 src/Point.java
+ create mode 100644 src/Viewport.java
+ create mode 100644 src/VirtualWorld.java
+ create mode 100644 src/WorldModel.java
+ create mode 100644 src/WorldView.java
+ create mode 100755 src/core.jar
+ create mode 100644 src/gaia.sav
+ create mode 100644 src/imagelist
+ create mode 100644 src/images/blacksmith.bmp
+ create mode 100644 src/images/blob1.bmp
+ create mode 100644 src/images/blob10.bmp
+ create mode 100644 src/images/blob11.bmp
+ create mode 100644 src/images/blob12.bmp
+ create mode 100644 src/images/blob2.bmp
+ create mode 100644 src/images/blob3.bmp
+ create mode 100644 src/images/blob4.bmp
+ create mode 100644 src/images/blob5.bmp
+ create mode 100644 src/images/blob6.bmp
+ create mode 100644 src/images/blob7.bmp
+ create mode 100644 src/images/blob8.bmp
+ create mode 100644 src/images/blob9.bmp
+ create mode 100644 src/images/freeze1.bmp
+ create mode 100644 src/images/freeze2.bmp
+ create mode 100644 src/images/freeze3.bmp
+ create mode 100644 src/images/freeze4.bmp
+ create mode 100644 src/images/grass.bmp
+ create mode 100644 src/images/miner1.bmp
+ create mode 100644 src/images/miner2.bmp
+ create mode 100644 src/images/miner3.bmp
+ create mode 100644 src/images/miner4.bmp
+ create mode 100644 src/images/miner5.bmp
+ create mode 100644 src/images/none.bmp
+ create mode 100644 src/images/obstacle.bmp
+ create mode 100644 src/images/ore.bmp
+ create mode 100644 src/images/quake1.bmp
+ create mode 100644 src/images/quake2.bmp
+ create mode 100644 src/images/quake3.bmp
+ create mode 100644 src/images/quake4.bmp
+ create mode 100644 src/images/quake5.bmp
+ create mode 100644 src/images/quake6.bmp
+ create mode 100644 src/images/rock.bmp
+ create mode 100644 src/images/vein.bmp
+ create mode 100644 src/images/wyvern1.bmp
+ create mode 100644 src/images/wyvern2.bmp
+ create mode 100644 src/images/wyvern3.bmp
+ create mode 100644 src/images/wyvern4.bmp
+ create mode 100644 src/images/wyvern5.bmp
+ create mode 100644 src/images/wyvern6.bmp
+ create mode 100644 src/images/wyvern7.bmp
+ create mode 100644 src/images/wyvern8.bmp
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git git push -u origin master
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git push -u origin master
+Counting objects: 87, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (83/83), done.
+Writing objects: 100% (87/87), 1.05 MiB | 15.42 MiB/s, done.
+Total 87 (delta 30), reused 0 (delta 0)
+remote: Resolving deltas: 100% (30/30), done.
+To https://github.com/ANGELLOPARR/CSC203-Project.git
+   2093cc2..4cc848c  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.idea/misc.xml
+	.idea/modules.xml
+	.idea/workspace.xml
+
+nothing added to commit but untracked files present (use "git add" to track)
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git add *.xml
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git commit -m "add .xml files"
+[master 0732635] add .xml files
+ 3 files changed, 677 insertions(+)
+ create mode 100644 .idea/misc.xml
+ create mode 100644 .idea/modules.xml
+ create mode 100644 .idea/workspace.xml
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 4.53 KiB | 4.53 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/ANGELLOPARR/CSC203-Project.git
+   4cc848c..0732635  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ git pull origin master
+From https://github.com/ANGELLOPARR/CSC203-Project
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ ls
+Project1_IntelliJ.iml	out
+README.md		src
+Angellos-MacBook-Pro:Project1_IntelliJ angellop$ cd ~
+Angellos-MacBook-Pro:~ angellop$ ;s
+-bash: syntax error near unexpected token `;'
+Angellos-MacBook-Pro:~ angellop$ ls
+#.emacs#			NetBeansProjects
+Applications			New Unity Project
+Arena Tracker			PAAC
+Creative Cloud Files		Pictures
+Desktop				Public
+Developer			SLOHacks_2018
+Documents			Test
+Downloads			VM_Robotics
+GitHub				Web_Dev
+IntelliJ			hackathon
+Library				iCloud Drive (Archive)
+Movies				iCloud Drive (Archive) - 1
+Music				practice_code
+Angellos-MacBook-Pro:~ angellop$ mkdir newGitTest
+Angellos-MacBook-Pro:~ angellop$ cd newGitTest/
+Angellos-MacBook-Pro:newGitTest angellop$ ls
+Angellos-MacBook-Pro:newGitTest angellop$ git init
+Initialized empty Git repository in /Users/angellop/newGitTest/.git/
+Angellos-MacBook-Pro:newGitTest angellop$ git remote add origin https://github.com/ANGELLOPARR/newGitTest.git
+Angellos-MacBook-Pro:newGitTest angellop$ ls
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+Angellos-MacBook-Pro:newGitTest angellop$ git pull origin master
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+1   just checking out how to make pull requests
+Unpacking objects: 100% (3/3), done.
+From https://github.com/ANGELLOPARR/newGitTest
+ * branch            master     -> FETCH_HEAD
+ * [new branch]      master     -> origin/master
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch master
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:newGitTest angellop$ ls
+README.md
+Angellos-MacBook-Pro:newGitTest angellop$ git checkout -b pull-request-demo
+Switched to a new branch 'pull-request-demo'
+Angellos-MacBook-Pro:newGitTest angellop$ git push origin pull-request-demo
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'pull-request-demo' on GitHub by visiting:
+remote:      https://github.com/ANGELLOPARR/newGitTest/pull/new/pull-request-demo
+remote:
+To https://github.com/ANGELLOPARR/newGitTest.git
+ * [new branch]      pull-request-demo -> pull-request-demo
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch pull-request-demo
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:newGitTest angellop$ vim pullRequest.txt
+Angellos-MacBook-Pro:newGitTest angellop$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod <(+/-)x>      override the executable bit of the listed files
+
+Angellos-MacBook-Pro:newGitTest angellop$ git add --all
+Angellos-MacBook-Pro:newGitTest angellop$ git commit -m "add new txt file"
+[pull-request-demo d9536de] add new txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 pullRequest.txt
+Angellos-MacBook-Pro:newGitTest angellop$ git push origin master
+Everything up-to-date
+Angellos-MacBook-Pro:newGitTest angellop$ ls
+README.md	pullRequest.txt
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch pull-request-demo
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:newGitTest angellop$ git push origin pull-request-demo
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 339 bytes | 339.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ANGELLOPARR/newGitTest.git
+   bdf1dbf..d9536de  pull-request-demo -> pull-request-demo
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch pull-request-demo
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:newGitTest angellop$ ls
+README.md	pullRequest.txt
+Angellos-MacBook-Pro:newGitTest angellop$ cd ..
+Angellos-MacBook-Pro:~ angellop$ ls
+#.emacs#			New Unity Project
+Applications			PAAC
+Arena Tracker			Pictures
+Creative Cloud Files		Public
+Desktop				SLOHacks_2018
+Developer			Test
+Documents			VM_Robotics
+Downloads			Web_Dev
+GitHub				hackathon
+IntelliJ			iCloud Drive (Archive)
+Library				iCloud Drive (Archive) - 1
+Movies				newGitTest
+Music				practice_code
+NetBeansProjects
+Angellos-MacBook-Pro:~ angellop$ cd newGitTest/
+Angellos-MacBook-Pro:newGitTest angellop$ ls
+README.md	pullRequest.txt
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch pull-request-demo
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:newGitTest angellop$ git checkout master
+Switched to branch 'master'
+Angellos-MacBook-Pro:newGitTest angellop$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), done.
+From https://github.com/ANGELLOPARR/newGitTest
+   bdf1dbf..b3e10ff  master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+Angellos-MacBook-Pro:newGitTest angellop$ git pull master pull-request-demo
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Angellos-MacBook-Pro:newGitTest angellop$ git pull pull-request-demo
+fatal: 'pull-request-demo' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch master
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:newGitTest angellop$ git checkout pull-request-demo
+Switched to branch 'pull-request-demo'
+Angellos-MacBook-Pro:newGitTest angellop$ git checkout nonexistant-branch
+error: pathspec 'nonexistant-branch' did not match any file(s) known to git.
+Angellos-MacBook-Pro:newGitTest angellop$ git checkout master
+Switched to branch 'master'
+Angellos-MacBook-Pro:newGitTest angellop$ git merge pull-request-demo
+Updating bdf1dbf..d9536de
+Fast-forward
+ pullRequest.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 pullRequest.txt
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch master
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:newGitTest angellop$ git checkout pull-request-demo
+Switched to branch 'pull-request-demo'
+Angellos-MacBook-Pro:newGitTest angellop$ git branch -d pull-request-demo
+error: Cannot delete branch 'pull-request-demo' checked out at '/Users/angellop/newGitTest'
+Angellos-MacBook-Pro:newGitTest angellop$ git status
+On branch pull-request-demo
+nothing to commit, working tree clean
+Angellos-MacBook-Pro:newGitTest angellop$ git checkout master
+Switched to branch 'master'
+Angellos-MacBook-Pro:newGitTest angellop$ git branch -d pull-request-demo
+Deleted branch pull-request-demo (was d9536de).
+Angellos-MacBook-Pro:newGitTest angellop$
